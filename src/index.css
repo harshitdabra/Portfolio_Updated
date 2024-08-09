@@ -1,0 +1,155 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #e2e8f0; /* Light text color for readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1e293b; /* Fallback background color */
+    position: relative;
+}
+
+/* Enhanced Background Image with Overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: brightness(25%) contrast(1.2); /* Adjust brightness and contrast for better visibility */
+    z-index: -1;
+}
+
+/* Custom Skill Card Styles */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(51, 65, 85, 0.8); /* Slightly lighter background */
+    border-radius: 20px; /* Larger rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transitions */
+    backdrop-filter: blur(10px); /* Background blur for depth */
+}
+
+/* Hover Effect for Scaling, Shadow, and Background Color */
+.skill-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6); /* Deeper shadow on hover */
+    background-color: rgba(51, 65, 85, 0.9); /* Darker background on hover */
+}
+
+/* Group Hover Effect */
+.group {
+    position: relative;
+}
+
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+}
+
+.group-hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.transition-opacity {
+    transition: opacity 0.4s ease;
+}
+
+.transition-transform {
+    transition: transform 0.4s ease;
+}
+
+/* Social Icons Container */
+.social-icons-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Consistent spacing */
+    width: 240px; /* Wider for better layout */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Base Social Icon Styles */
+.social-icon {
+    width: 220px; /* Icon width */
+    height: 60px; /* Icon height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effects for Social Icons */
+.social-icon:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    transform: translateX(10px); /* Slightly move the icon on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Add shadow on hover */
+}
+
+/* Gradient Overlay on Hover */
+.social-icon:hover:before {
+    opacity: 1;
+}
+
+/* Gradient Overlay */
+.social-icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* LinkedIn */
+.social-icon.linkedin {
+    background: linear-gradient(135deg, #0077b5, #005582);
+}
+
+.social-icon.linkedin:hover {
+    background: #005582;
+}
+
+/* GitHub */
+.social-icon.github {
+    background: linear-gradient(135deg, #333, #444);
+}
+
+.social-icon.github:hover {
+    background: #444;
+}
+
+/* Email */
+.social-icon.email {
+    background: linear-gradient(135deg, #00bfae, #008b8e);
+}
+
+.social-icon.email:hover {
+    background: #008b8e;
+}

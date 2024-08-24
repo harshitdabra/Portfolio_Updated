@@ -2,14 +2,11 @@ import React from 'react';
 import { data } from "../data/data.js";
 
 const Work = () => {
-  // Projects file
   const project = data;
 
-  // Ensure 9 items (7 projects + 2 placeholders for coming soon)
   const placeholders = new Array(9 - project.length).fill(null);
   const allProjects = [...project, ...placeholders];
 
-  // Placeholder image (same as project image for consistency)
   const placeholderImage = project[0] ? project[0].image : 'default-placeholder.jpg'; // Fallback image if project array is empty
 
   return (
@@ -35,14 +32,13 @@ const Work = () => {
               }}
               className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div h-60 w-full"
             >
-              {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300">
                 <span className="text-2xl font-bold text-white tracking-wider">
                   {item ? item.name : 'Coming Soon'}
                 </span>
                 {item && item.live ? (
                   <div className="pt-8 text-center">
-                    {/* Visit Button */}
+
                     <a href={item.live} target="_blank" rel="noopener noreferrer">
                       <button
                         className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"

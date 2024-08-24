@@ -3,57 +3,57 @@ import Blockchain from '..//assets/projects/Blockchain.jpg'
 export const data = [
     {
         id: 1,
-        name: "Project 1",
+        name: "Portfolio Website",
         image: Blockchain,
-        live: "https://example.com/project1", // Replace with actual link
+        live: "https://github.com/harshitdabra/Portfolio/tree/master", 
     },
     {
         id: 2,
-        name: "Project 2",
+        name: "Decentralized File Upload System",
         image: Blockchain,
-        live: "https://example.com/project2", // Replace with actual link
+        live: "https://github.com/harshitdabra/Decentralized_File_Upload_System", 
     },
     {
         id: 3,
-        name: "Project 3",
+        name: "Fake Medicine Detection",
         image: Blockchain,
-        live: "https://example.com/project3", // Replace with actual link
+        live: "https://github.com/harshitdabra/Fake_medicine_detection", 
     },
     {
         id: 4,
-        name: "Project 4",
+        name: "Vehicle Transfer Dapp",
         image: Blockchain,
-        live: "https://example.com/project4", // Replace with actual link
+        live: "https://github.com/harshitdabra/Vehicle_Ownership_Transfer", 
     },
     {
         id: 5,
-        name: "Project 5",
+        name: "nUSD (Oracle) ",
         image: Blockchain,
-        live: "https://example.com/project5", // Replace with actual link
+        live: "https://github.com/harshitdabra/nUSD", 
     },
     {
         id: 6,
-        name: "Project 6",
+        name: "Mental Disorder Chatbot",
         image: Blockchain,
-        live: "https://example.com/project6", // Replace with actual link
+        live: "https://github.com/harshitdabra/Mental_Disorder_Chatbot", 
     },
     {
         id: 7,
-        name: "Project 7",
+        name: "DEX",
         image: Blockchain,
-        live: "https://example.com/project7", // Replace with actual link
+        live: "https://github.com/harshitdabra/DEX", 
     },
-    // Two coming soon placeholders
+    
     {
         id: 8,
-        name: "Coming Soon",
+        name: "Coin Screener",
         image: Blockchain,
-        live: "", // No link for coming soon
+        live: "",
     },
     {
         id: 9,
         name: "Coming Soon",
         image: Blockchain,
-        live: "", // No link for coming soon
+        live: "", 
     },
 ];

@@ -15,7 +15,7 @@ import CSS from '../assets/css.png';
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='w-full min-h-screen bg-[#0a192f] text-gray-300'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
@@ -23,7 +23,7 @@ const Skills = () => {
           <p className='py-4'></p>
         </div>
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-10'>
           {/* Skill Item */}
           {[
             { src: HTML, alt: 'HTML icon', name: 'HTML' },

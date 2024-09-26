@@ -48,7 +48,7 @@ export const data = [
         id: 8,
         name: "Coin Screener",
         image: Blockchain,
-        live: "",
+        live: "https://coin-screener.vercel.app/",
     },
     {
         id: 9,
